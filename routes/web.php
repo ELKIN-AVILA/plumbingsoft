@@ -107,6 +107,24 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('/Casas/traeetapas','CasasController@traeetapas');
 	Route::post('/Casas/traesecciones','CasasController@traesecciones');
 	Route::post('/Casas/traecasas','CasasController@traecasas');
-
+	/**Tipdificultad */
+	Route::get('/Tipdificultad','TipdificultadController@index');
+	Route::post('/Tipdificultad/guardar','TipdificultadController@guardar');
+	Route::post('/Tipdificultad/editar','TipdificultadController@editar');
+	Route::put('/Tipdificultad/actualizar','TipdificultadController@actualizar');
+	Route::delete('/Tipdificultad/eliminar','TipdificultadController@eliminar');
+	/**Tareas */
+	Route::get('/Tareas','TareasController@index');
+	Route::post('/Tareas/guardar','TareasController@guardar');
+	Route::post('/Tareas/editar','TareasController@editar');
+	Route::put('/Tareas/actualizar','TareasController@actualizar');
+	Route::delete('/Tareas/eliminar','TareasController@eliminar');
+	/**Cronograma  */
+	Route::get('/Cronograma','CronogramaController@index');
+	Route::post('/Cronograma/guardar','CronogramaController@guardar');
+	Route::post('/Cronograma/editar','CronogramaController@editar');
+	Route::put('/Cronograma/actualizar','CronogramaController@actualizar');
+	Route::delete('/Cronograma/eliminar','CronogramaController@eliminar');
+	
 	
 });

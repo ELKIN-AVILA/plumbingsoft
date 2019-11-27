@@ -54,6 +54,9 @@
                             <li><a href="{{ url('/Herramientas') }}"><span>Crear Herramientas</span></a></li>
                             <li><a href="{{ url('/Tipoexa') }}"><span>Crear Tipo de Examen</span></a></li>
                             <li><a href="{{ url('/Examenes') }}"><span>Crear Examenes</span></a></li>
+                            <!-- tareas-->
+                            <li><a href="{{ url('/Tipdificultad') }}"><span>Crear Tipo de Dificultad</span></a></li>
+                            <li><a href="{{ url('/Tareas') }}"><span>Crear Tareas</span></a></li>
 
                     </ul> 
             </li>
